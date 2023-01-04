@@ -1,12 +1,18 @@
-import { NextPage } from "next";
 import React from "react";
+import Dropzone from "@/components/dragDrop";
 
-const IndexPage: NextPage = () => {
 
-  return (
-    <>
-    </>
-  );
-};
+export interface IndexProps {
 
-export default IndexPage;
+}
+
+const index: React.FC<IndexProps> = () => {
+
+    return(
+       <>
+         <Dropzone />
+       </>
+    )
+}
+
+export default index
